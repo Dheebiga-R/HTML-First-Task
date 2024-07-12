@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--CSS properties for html element-->
+  <style>
+    body{
+      min-height:100vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    div{
+      padding-left:77px;
+    }
+    .container{
+      border:3px solid grey;
+      max-width:37%;
+      padding:20px;
+      border-radius:10px;
+      margin-left:30%;
+      padding-bottom:30px;
+    }
+    form,h1{
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      color:black;
+    }
+    .align{
+      float:right;
+    }
+  </style>
+</head>
+<body>
+  <p style="text-align:center;font-weight: bold;font-size: 30px;">Fill the details</p>
+  <!--Form contains all the input type with values-->
+  <div class="container">
+  <form action=".../action-page.php" method="post" required>
+    <label for="fname" style="padding-left: 100px;">Text Type:</label>
+    <!--Input type as text-->
+    <input type="text" id="fname" name="fname" value="John Doe"><br><br>
+
+    <label for="email" style="padding-left: 82px;">E-mail Type: </label>
+    <!--Input type as email-->
+    <input type="email" id="email" name="email" value="johndoe@gmail.com"><br><br>
+
+    <label for="password" style="padding-left: 58px;">Password Type: </label>
+    <!--Input type as password-->
+    <input type="password" id="password" name="password" value="John@123"><br><br>
+
+    <label for="search" style="padding-left: 77px;">Search Type: </label>
+    <!--Input type as search-->
+    <input type="search" id="search" name="search" value="what is HTML?" ><br><br>
+
+    <label for="tele" style="padding-left: 52px;">Telephone Type: </label>
+    <!--Input type as telephone-->
+    <input type="tel" id="tele" name="tele" value="+91 6345728519"><br><br>
+
+    <label for="time" style="padding-left: 92px;">Time Type: </label>
+    <!--Input type as time-->
+    <input type="time" id="number" name="number" value="12:00"><br><br>
+
+    <label for="link" style="padding-left: 98px;">URL Type: </label>
+    <!--Input type as url-->
+    <input type="url" id="link" name="link" value="https://google.com"><br><br>
+
+    <label for="weekdays" style="padding-left: 90px;">Week Type: </label>
+    <!--Input type as week-->
+    <input type="week" id="weekdays" name="weekdays" value="2024-W20"><br><br>
+
+    <label for="rangeval" style="padding-left: 87px;">Range Type: </label>
+    <!--Input type as range-->
+    <input type="range" id="rangeval" name="rangeval" value="50" max="100"><br><br>
+
+    <div>
+      <!--Input type as radio-->
+    <label for="radio">Radio Type: </label><br>
+    <input type="radio" id="radioone" name="radio" checked>
+    <label for="radioone">Radio one </label><br>
+    <input type="radio" id="radiotwo" name="radio">
+    <label for="radiotwo">Radio Two </label><br>
+    <input type="radio" id="radiothree" name="radio">
+    <label for="radiothree">Radio Three </label><br><br>
+  </div>
+
+  <div>
+    <!--Input type as checkbox-->
+    <label for="check">Checkbox Type: </label><br>
+    <input type="checkbox" id="checkboxone" name="checkbox" checked>
+    <label for="checkboxone">checkbox one </label><br>
+    <input type="checkbox" id="checkboxtwo" name="checkbox">
+    <label for="checkboxtwo">checkbox Two </label><br>
+    <input type="checkbox" id="checkboxthree" name="checkbox">
+    <label for="checkboxthree">checkbox Three </label><br><br>
+  </div>
+
+    <label for="number" style="padding-left: 65px;">Number Type: </label>
+    <!--Input type as number-->
+    <input type="number" id="number" name="number" value="50" min="0" max="100"><br><br>
+
+    <label for="month" style="padding-left: 77px;">Month Type: </label>
+    <!--Input type as month-->
+    <input type="month" id="month" name="month" value="2024-09"><br><br>
+
+    <label for="image" style="padding-left: 77px;">Image Type: </label><br>
+    <!--Input type as image-->
+    <input type="image" id="image" name="image" src="ImageProfile.png" alt="image" width="100px" height="100px" style="padding-left:77px;"><br><br>
+
+    <label for="hide" style="padding-left: 70px;">Hidden Type: </label>
+    <!--Input type as hidden-->
+    <input type="hidden" id="hide" name="hide" value="companyname"><br><br>
+
+    <label for="file" style="padding-left: 98px;">File Type: </label>
+    <!--Input type as file-->
+    <input type="file" id="file" name="file" ><br><br>
+
+    <label for="datetime">Date-Time local Type: </label>
+    <!--Input type as local date and time-->
+    <input type="datetime-local" id="datetime" name="datetime" value="2024-07-10T07:12"><br><br>
+
+    <label for="date" style="padding-left: 88px;">Date Type: </label>
+    <!--Input type as date-->
+    <input type="date" id="date" name="date" value="2024-07-12"><br><br>
+    
+    <label for="col" style="padding-left: 85px;">Color Type:</label>
+    <!--Input type as color-->
+    <input type="color" id="col" name="col" value="#0000ff"><br><br>
+
+    <div class="align">
+      <!--Input type as button-->
+    <input type="button" value="Button">
+
+    <!--Input type as submit-->
+    <input type="submit" value="Submit">
+
+    <!--Input type as reset-->
+    <input type="reset" value="Reset">
+    </div>
+  </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--Those css properties are added to show the web page more clean-->
+  <style>
+    body{
+        background-image: radial-gradient(whitesmoke,pink);
+        min-height:100vh;
+    }
+    div{
+      font-size: 20px;;
+      margin:25px;
+    }
+  </style>
+</head>
+<body>
+  <!--Radio buttons for employee type in form tag-->
+  <div>
+    <form action=".../action-page.php" method="post">
+      <label for="employee">Employee Type</label><br>
+      <input type="radio" id="salary" name="employeetype">
+      <label for="salary">Salaried</label><br>
+      <input type="radio" id="own" name="employeetype">
+      <label for="own">Own Business</label>
+    </form>
+  </div>
+</body>
+</html>

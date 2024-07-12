@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact us form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link is used to add those icons in the web page-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Those css properties are added to show the web page more clean-->
+    <style>
+
+        body{
+        min-height:100vh;
+        background-image:radial-gradient(whitesmoke,#475569);
+        background-repeat:no-repeat;
+        background-size:contain;
+        }
+
+        .details{
+          display:inline-block;
+          padding:30px;
+        }
+
+        .info{
+          display:inline-block;
+          padding:25px;
+        }
+
+        .container{
+          width:auto;
+          max-height:50%;
+          display:inline-block;
+          border:2px solid black;
+          border-radius:10px;
+          margin-left:20%;
+        }
+
+        #button{
+          width:80px;
+          height:30px;
+          border:1px solid black;
+          border-radius: 5px;
+          background-color: whitesmoke;
+          color:black;
+          font-size: 15px;
+          font-weight: bold;
+        }
+
+        #button:hover{
+          background-color:#475569;
+          color:whitesmoke;
+        }
+    </style>
+
+</head>
+<body>
+  <!--Heading for the page-->
+<h1 style="text-align:center;">Contact Form</h1>
+
+
+<div class="container">
+  <!--sample information of the reputed website owner-->
+<div class="info">
+   <h1>Contact Us</h1>
+    <p><i class="material-icons">place</i>ADDRESS:<br>198 West 21th Street, Suite 721 New York NY 10016</p>
+    <p>&#128383; PHONE:<br>+1235 2355 98</p>
+    <p><i class="material-icons">email</i>EMAIL:<br>info@yoursite.com</p>
+</div>
+<!--This div section contains the form elements-->
+<div class="details">
+    <form action=".../action-page.php" method="post" autocomplete="off">
+        <label for="fullname">
+            Full Name<br>
+            <!--Text type input tag-->
+            <input type="text" id="fullname" name="full" size="25" required>
+        </label>
+        <br><br>
+        <label for="mail">
+            E-mail<br>
+            <!--E-mail type input tag-->
+            <input type="email" id="mail" name="email" size="25" required>
+        </label>
+        <br><br>
+        <label for="subject">
+            Subject<br>
+            <!--Text type input tag-->
+            <input type="text" id="subject" name="content" size="25" required>
+        </label>
+        <br><br>
+        <label for="message">
+            Message<br>
+            <!--Textarea type input tag-->
+            <textarea id="message" name="msg" cols="25" rows="3"></textarea>
+        </label>
+        <br><br>
+        <!--Sunmit type input tag-->
+        <input type="submit" value="Submit" id="button">
+    </form>
+</div>
+</div>
+</body>
+</html>
